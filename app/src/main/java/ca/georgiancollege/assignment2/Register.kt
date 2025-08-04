@@ -4,14 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import ca.georgiancollege.assignment2.databinding.ActivityRegisterBinding
 import com.google.firebase.Firebase
-import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
@@ -27,23 +22,29 @@ class Register : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.regButton.setOnClickListener {
-            registerUser("tas@auth.com", "password")
+            //registerUser("tas@auth.com", "password")
+            val email = binding.regEmail.text.toString().trim()
+            val password = binding.regPassword.text.toString().trim()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                registerUser(email, password)
+            } else {
+                Toast.makeText(this, "Please enter both email and password", Toast.LENGTH_SHORT).show()
+            }
+        }
         }
 
-    }
 
-    private fun registerUser(email: String, password: String){
+
+    private fun registerUser(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) {
-                task ->
+            .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(this, Login::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, Login::class.java))
+                    finish()
                 } else {
                     Log.e("Register", "Registration failed", task.exception)
-                    Toast.makeText(this,
-                        "Registration failed",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Registration failed", Toast.LENGTH_SHORT).show()
                 }
             }
     }
