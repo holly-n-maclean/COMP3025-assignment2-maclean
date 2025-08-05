@@ -3,7 +3,19 @@
     <style name="Base.Theme.Assignment2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/app_background</item>
     </style>
 
     <style name="Theme.Assignment2" parent="Base.Theme.Assignment2" />
+
+    <style name="buttonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_layout_height</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:backgroundTint">@color/button_color</item>
+    </style>
 </resources>

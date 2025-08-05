@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Assignment2</string>
+    <string name="reg_text">Click to Register</string>
+    <string name="login_button">Login</string>
+    <string name="password_text">Password</string>
+    <string name="email_text">Email</string>
+    <string name="logout_button_text">Logout</string>
+    <string name="fav_movie_text">Favourite 20 Movies</string>
+    <string name="add_movie_button">Add Movie</string>
+    <string name="click_registration">Click to cancel registration</string>
+    <string name="register_button">Register</string>
+    <string name="password_field_text">Password</string>
+    <string name="email_field_text">Email</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="edit_button_text">Edit</string>
+    <string name="rating_text">Critics Rating</string>
+    <string name="year_text">Year</string>
+    <string name="movie_title_text">Movie Title</string>
+    <string name="movie_poster_desc">Movie Poster</string>
+    <string name="cancel_edit_screen_text">Cancel</string>
+    <string name="save_button_text">Save</string>
+    <string name="poster_url_field_text">Poster URL</string>
+    <string name="rating_field_text">Rating</string>
+    <string name="director_field_text">Director</string>
+    <string name="year_input_field_text">Year</string>
+    <string name="fetch_movie_button_text">Fetch Movie Info</string>
+    <string name="movie_title_field_text">Movie Title</string>
 </resources>

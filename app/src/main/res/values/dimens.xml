@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="button_layout_height">60dp</dimen>
+    <dimen name="button_margin">7dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="header_size">25sp</dimen>
+    <dimen name="reg_top_margin">40dp</dimen>
+    <dimen name="login_button_top_margin">23dp</dimen>
+    <dimen name="login_box_margin_top">8dp</dimen>
+    <dimen name="email_top_margin">244dp</dimen>
+    <dimen name="logout_margin_bottom">8dp</dimen>
+    <dimen name="logout_margin">16dp</dimen>
+    <dimen name="movie_text_margin_top">92dp</dimen>
+    <dimen name="movie_text_height">42dp</dimen>
+    <dimen name="movie_text_width">242dp</dimen>
+    <dimen name="recycler_height">550dp</dimen>
+    <dimen name="recycler_width">389dp</dimen>
+    <dimen name="add_button_margin">48dp</dimen>
+    <dimen name="add_button_margin_">12dp</dimen>
+    <dimen name="cancel_margin_top">40dp</dimen>
+    <dimen name="reg_button_margin_top">21dp</dimen>
+    <dimen name="reg_button_height">55dp</dimen>
+    <dimen name="reg_button_width">108dp</dimen>
+    <dimen name="password_field_margin_top">8dp</dimen>
+    <dimen name="email_field_margin_top">244dp</dimen>
+    <dimen name="delete_button_start_margin">8dp</dimen>
+    <dimen name="delete_padding">8dp</dimen>
+    <dimen name="edit_padding">8dp</dimen>
+    <dimen name="layout_edit_button_margin">4dp</dimen>
+    <dimen name="movie_list_text">12sp</dimen>
+    <dimen name="movie_title_text">14sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="poster_margin_end">8dp</dimen>
+    <dimen name="poster_height">90dp</dimen>
+    <dimen name="poster_width">60dp</dimen>
+    <dimen name="movies_xml_padding">8dp</dimen>
+    <dimen name="movies_xml_margin">6dp</dimen>
+    <dimen name="fetch_button_margin_top">12dp</dimen>
+    <dimen name="movie_edit_view_padding">16dp</dimen>
+
+</resources>

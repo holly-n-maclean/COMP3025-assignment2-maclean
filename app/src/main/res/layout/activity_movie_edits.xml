@@ -3,7 +3,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="@dimen/movie_edit_view_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,56 +14,59 @@
             android:id="@+id/titleInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Movie Title"
+            android:hint="@string/movie_title_field_text"
             android:inputType="text" />
 
         <Button
             android:id="@+id/fetchButton"
+            style="@style/buttonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fetch Movie Info"
-            android:layout_marginTop="12dp" />
+            android:text="@string/fetch_movie_button_text"
+            android:layout_marginTop="@dimen/fetch_button_margin_top" />
 
         <EditText
             android:id="@+id/yearInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Year"
+            android:hint="@string/year_input_field_text"
             android:inputType="number" />
 
         <EditText
             android:id="@+id/directorInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Director"
+            android:hint="@string/director_field_text"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/ratingInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Rating"
+            android:hint="@string/rating_field_text"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/posterUrlInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Poster URL"
+            android:hint="@string/poster_url_field_text"
             android:inputType="textUri" />
 
         <Button
             android:id="@+id/saveButton"
+            style="@style/buttonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save"
+            android:text="@string/save_button_text"
             android:layout_marginTop="16dp" />
 
         <Button
             android:id="@+id/cancelButton"
+            style="@style/buttonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cancel" />
+            android:text="@string/cancel_edit_screen_text" />
 
     </LinearLayout>
 </ScrollView>
